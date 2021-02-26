@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		701A1336CF14B407D1C4D952 /* Pods_crud_axosnet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EADC34F3EC1F4715ED905D1F /* Pods_crud_axosnet.framework */; };
+		C402010725E77EDC0079B25C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C402010625E77EDC0079B25C /* AppDelegate.m */; };
+		C402010A25E77EDC0079B25C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C402010925E77EDC0079B25C /* SceneDelegate.m */; };
+		C402010D25E77EDC0079B25C /* ListController.m in Sources */ = {isa = PBXBuildFile; fileRef = C402010C25E77EDC0079B25C /* ListController.m */; };
+		C402011025E77EDC0079B25C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C402010E25E77EDC0079B25C /* Main.storyboard */; };
+		C402011325E77EDC0079B25C /* crud_axosnet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C402011125E77EDC0079B25C /* crud_axosnet.xcdatamodeld */; };
+		C402011525E77EDD0079B25C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C402011425E77EDD0079B25C /* Assets.xcassets */; };
+		C402011825E77EDD0079B25C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C402011625E77EDD0079B25C /* LaunchScreen.storyboard */; };
+		C402011B25E77EDD0079B25C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C402011A25E77EDD0079B25C /* main.m */; };
+		C402015D25E7821F0079B25C /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C402015C25E7821F0079B25C /* TableViewCell.m */; };
+		C402016625E789AB0079B25C /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C402016525E789AB0079B25C /* FormViewController.m */; };
+		C402017325E78DC60079B25C /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C402016C25E78DC60079B25C /* Welcome.storyboard */; };
+		C402017425E78DC60079B25C /* FinishWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C402016F25E78DC60079B25C /* FinishWelcomeViewController.m */; };
+		C402017625E78DC60079B25C /* WelcomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C402017225E78DC60079B25C /* WelcomePageViewController.m */; };
+		C402018325E791C20079B25C /* UITextViewBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = C402017B25E791C10079B25C /* UITextViewBorder.m */; };
+		C402018425E791C20079B25C /* UIViewRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = C402017C25E791C10079B25C /* UIViewRounded.m */; };
+		C402018525E791C20079B25C /* UITextFieldBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = C402017D25E791C10079B25C /* UITextFieldBorder.m */; };
+		C402018625E791C20079B25C /* UIButtonRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = C402018025E791C10079B25C /* UIButtonRounded.m */; };
+		C402019125E7932E0079B25C /* UIColor+Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = C402019025E7932E0079B25C /* UIColor+Colors.m */; };
+		C40201A025E796FB0079B25C /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C402019E25E796FB0079B25C /* MainMenuViewController.m */; };
+		C40201A925E79D120079B25C /* CRUD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40201A825E79D120079B25C /* CRUD.storyboard */; };
+		C40201B225E79EA90079B25C /* APKernel.m in Sources */ = {isa = PBXBuildFile; fileRef = C40201B025E79EA90079B25C /* APKernel.m */; };
+		C463CAFA25E8C4EF00E815E4 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C463CAF625E8C4EF00E815E4 /* SourceSansPro-Bold.ttf */; };
+		C463CAFB25E8C4EF00E815E4 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C463CAF725E8C4EF00E815E4 /* SourceSansPro-SemiBold.ttf */; };
+		C463CAFC25E8C4EF00E815E4 /* SourceSansPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C463CAF825E8C4EF00E815E4 /* SourceSansPro-Light.ttf */; };
+		C463CAFD25E8C4EF00E815E4 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C463CAF925E8C4EF00E815E4 /* SourceSansPro-Regular.ttf */; };
+		C47B793F25E87A3700C9A6F6 /* UIImageViewRounded.m in Sources */ = {isa = PBXBuildFile; fileRef = C47B793D25E87A3700C9A6F6 /* UIImageViewRounded.m */; };
+		C4C8164E25E8071400567CEA /* APWRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8164D25E8071400567CEA /* APWRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C402012125E77EDD0079B25C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C40200FA25E77EDC0079B25C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C402010125E77EDC0079B25C;
+			remoteInfo = crud_axosnet;
+		};
+		C402012C25E77EDD0079B25C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C40200FA25E77EDC0079B25C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C402010125E77EDC0079B25C;
+			remoteInfo = crud_axosnet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F9E6848AA7293565FD52F63 /* Pods-crud_axosnet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crud_axosnet.debug.xcconfig"; path = "Target Support Files/Pods-crud_axosnet/Pods-crud_axosnet.debug.xcconfig"; sourceTree = "<group>"; };
+		0FACA4723E38907E8A5E6302 /* Pods-crud_axosnet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-crud_axosnet.release.xcconfig"; path = "Target Support Files/Pods-crud_axosnet/Pods-crud_axosnet.release.xcconfig"; sourceTree = "<group>"; };
+		C402010225E77EDC0079B25C /* crud_axosnet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crud_axosnet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C402010525E77EDC0079B25C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C402010625E77EDC0079B25C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C402010825E77EDC0079B25C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C402010925E77EDC0079B25C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C402010B25E77EDC0079B25C /* ListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListController.h; sourceTree = "<group>"; };
+		C402010C25E77EDC0079B25C /* ListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListController.m; sourceTree = "<group>"; };
+		C402010F25E77EDC0079B25C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C402011225E77EDC0079B25C /* crud_axosnet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = crud_axosnet.xcdatamodel; sourceTree = "<group>"; };
+		C402011425E77EDD0079B25C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C402011725E77EDD0079B25C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C402011925E77EDD0079B25C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C402011A25E77EDD0079B25C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C402012025E77EDD0079B25C /* crud_axosnetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crud_axosnetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C402012B25E77EDD0079B25C /* crud_axosnetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crud_axosnetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C402015B25E7821F0079B25C /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		C402015C25E7821F0079B25C /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		C402016425E789AB0079B25C /* FormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormViewController.h; sourceTree = "<group>"; };
+		C402016525E789AB0079B25C /* FormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormViewController.m; sourceTree = "<group>"; };
+		C402016C25E78DC60079B25C /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		C402016D25E78DC60079B25C /* FinishWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishWelcomeViewController.h; sourceTree = "<group>"; };
+		C402016F25E78DC60079B25C /* FinishWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishWelcomeViewController.m; sourceTree = "<group>"; };
+		C402017025E78DC60079B25C /* WelcomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomePageViewController.h; sourceTree = "<group>"; };
+		C402017225E78DC60079B25C /* WelcomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomePageViewController.m; sourceTree = "<group>"; };
+		C402017B25E791C10079B25C /* UITextViewBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewBorder.m; sourceTree = "<group>"; };
+		C402017C25E791C10079B25C /* UIViewRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewRounded.m; sourceTree = "<group>"; };
+		C402017D25E791C10079B25C /* UITextFieldBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldBorder.m; sourceTree = "<group>"; };
+		C402017E25E791C10079B25C /* UIButtonRounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonRounded.h; sourceTree = "<group>"; };
+		C402017F25E791C10079B25C /* UITextFieldBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldBorder.h; sourceTree = "<group>"; };
+		C402018025E791C10079B25C /* UIButtonRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonRounded.m; sourceTree = "<group>"; };
+		C402018125E791C20079B25C /* UITextViewBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewBorder.h; sourceTree = "<group>"; };
+		C402018225E791C20079B25C /* UIViewRounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewRounded.h; sourceTree = "<group>"; };
+		C402018F25E7932E0079B25C /* UIColor+Colors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Colors.h"; sourceTree = "<group>"; };
+		C402019025E7932E0079B25C /* UIColor+Colors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Colors.m"; sourceTree = "<group>"; };
+		C402019E25E796FB0079B25C /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		C402019F25E796FB0079B25C /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		C40201A825E79D120079B25C /* CRUD.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CRUD.storyboard; sourceTree = "<group>"; };
+		C40201B025E79EA90079B25C /* APKernel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APKernel.m; sourceTree = "<group>"; };
+		C40201B125E79EA90079B25C /* APKernel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APKernel.h; sourceTree = "<group>"; };
+		C463CAF625E8C4EF00E815E4 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
+		C463CAF725E8C4EF00E815E4 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		C463CAF825E8C4EF00E815E4 /* SourceSansPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.ttf"; sourceTree = "<group>"; };
+		C463CAF925E8C4EF00E815E4 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		C47B793D25E87A3700C9A6F6 /* UIImageViewRounded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageViewRounded.m; sourceTree = "<group>"; };
+		C47B793E25E87A3700C9A6F6 /* UIImageViewRounded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageViewRounded.h; sourceTree = "<group>"; };
+		C4C8164C25E8071400567CEA /* crud_axosnet-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "crud_axosnet-Bridging-Header.h"; sourceTree = "<group>"; };
+		C4C8164D25E8071400567CEA /* APWRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APWRequest.swift; sourceTree = "<group>"; };
+		C4C8166525E816AE00567CEA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EADC34F3EC1F4715ED905D1F /* Pods_crud_axosnet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_crud_axosnet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C40200FF25E77EDC0079B25C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701A1336CF14B407D1C4D952 /* Pods_crud_axosnet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C402011D25E77EDD0079B25C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C402012825E77EDD0079B25C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67ACCC16AAB94E9FB579E4AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EADC34F3EC1F4715ED905D1F /* Pods_crud_axosnet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D4222CDD4E0E10B42875C71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F9E6848AA7293565FD52F63 /* Pods-crud_axosnet.debug.xcconfig */,
+				0FACA4723E38907E8A5E6302 /* Pods-crud_axosnet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C40200F925E77EDC0079B25C = {
+			isa = PBXGroup;
+			children = (
+				C402010425E77EDC0079B25C /* crud_axosnet */,
+				C402010325E77EDC0079B25C /* Products */,
+				7D4222CDD4E0E10B42875C71 /* Pods */,
+				67ACCC16AAB94E9FB579E4AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C402010325E77EDC0079B25C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C402010225E77EDC0079B25C /* crud_axosnet.app */,
+				C402012025E77EDD0079B25C /* crud_axosnetTests.xctest */,
+				C402012B25E77EDD0079B25C /* crud_axosnetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C402010425E77EDC0079B25C /* crud_axosnet */ = {
+			isa = PBXGroup;
+			children = (
+				C402017A25E791210079B25C /* UIClases */,
+				C402015025E7805D0079B25C /* Resources */,
+				C402014F25E780570079B25C /* Core */,
+				C402014E25E7804B0079B25C /* CoreControllers */,
+				C402014D25E780430079B25C /* Controllers */,
+			);
+			path = crud_axosnet;
+			sourceTree = "<group>";
+		};
+		C402014D25E780430079B25C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C40201A425E79CC70079B25C /* CRUD */,
+				C402016A25E78D960079B25C /* Welcome */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C402014E25E7804B0079B25C /* CoreControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C40201B125E79EA90079B25C /* APKernel.h */,
+				C40201B025E79EA90079B25C /* APKernel.m */,
+				C4C8164D25E8071400567CEA /* APWRequest.swift */,
+				C4C8164C25E8071400567CEA /* crud_axosnet-Bridging-Header.h */,
+			);
+			path = CoreControllers;
+			sourceTree = "<group>";
+		};
+		C402014F25E780570079B25C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C402011625E77EDD0079B25C /* LaunchScreen.storyboard */,
+				C402019F25E796FB0079B25C /* MainMenuViewController.h */,
+				C402019E25E796FB0079B25C /* MainMenuViewController.m */,
+				C402010E25E77EDC0079B25C /* Main.storyboard */,
+				C402010525E77EDC0079B25C /* AppDelegate.h */,
+				C402010625E77EDC0079B25C /* AppDelegate.m */,
+				C402010825E77EDC0079B25C /* SceneDelegate.h */,
+				C402010925E77EDC0079B25C /* SceneDelegate.m */,
+				C402011A25E77EDD0079B25C /* main.m */,
+				C4C8166525E816AE00567CEA /* PrefixHeader.pch */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C402015025E7805D0079B25C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C402018E25E792FA0079B25C /* Fonts */,
+				C402018D25E792F20079B25C /* Colors */,
+				C402011425E77EDD0079B25C /* Assets.xcassets */,
+				C402011925E77EDD0079B25C /* Info.plist */,
+				C402011125E77EDC0079B25C /* crud_axosnet.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C402015A25E7820C0079B25C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C402015B25E7821F0079B25C /* TableViewCell.h */,
+				C402015C25E7821F0079B25C /* TableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C402016A25E78D960079B25C /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				C402016D25E78DC60079B25C /* FinishWelcomeViewController.h */,
+				C402016F25E78DC60079B25C /* FinishWelcomeViewController.m */,
+				C402017025E78DC60079B25C /* WelcomePageViewController.h */,
+				C402017225E78DC60079B25C /* WelcomePageViewController.m */,
+				C402016C25E78DC60079B25C /* Welcome.storyboard */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		C402017A25E791210079B25C /* UIClases */ = {
+			isa = PBXGroup;
+			children = (
+				C47B793E25E87A3700C9A6F6 /* UIImageViewRounded.h */,
+				C47B793D25E87A3700C9A6F6 /* UIImageViewRounded.m */,
+				C402017E25E791C10079B25C /* UIButtonRounded.h */,
+				C402018025E791C10079B25C /* UIButtonRounded.m */,
+				C402017F25E791C10079B25C /* UITextFieldBorder.h */,
+				C402017D25E791C10079B25C /* UITextFieldBorder.m */,
+				C402018125E791C20079B25C /* UITextViewBorder.h */,
+				C402017B25E791C10079B25C /* UITextViewBorder.m */,
+				C402018225E791C20079B25C /* UIViewRounded.h */,
+				C402017C25E791C10079B25C /* UIViewRounded.m */,
+			);
+			path = UIClases;
+			sourceTree = "<group>";
+		};
+		C402018D25E792F20079B25C /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				C402018F25E7932E0079B25C /* UIColor+Colors.h */,
+				C402019025E7932E0079B25C /* UIColor+Colors.m */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		C402018E25E792FA0079B25C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C463CAF625E8C4EF00E815E4 /* SourceSansPro-Bold.ttf */,
+				C463CAF825E8C4EF00E815E4 /* SourceSansPro-Light.ttf */,
+				C463CAF925E8C4EF00E815E4 /* SourceSansPro-Regular.ttf */,
+				C463CAF725E8C4EF00E815E4 /* SourceSansPro-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C40201A425E79CC70079B25C /* CRUD */ = {
+			isa = PBXGroup;
+			children = (
+				C402015A25E7820C0079B25C /* Cell */,
+				C402010B25E77EDC0079B25C /* ListController.h */,
+				C402010C25E77EDC0079B25C /* ListController.m */,
+				C402016425E789AB0079B25C /* FormViewController.h */,
+				C402016525E789AB0079B25C /* FormViewController.m */,
+				C40201A825E79D120079B25C /* CRUD.storyboard */,
+			);
+			path = CRUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C402010125E77EDC0079B25C /* crud_axosnet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C402013425E77EDD0079B25C /* Build configuration list for PBXNativeTarget "crud_axosnet" */;
+			buildPhases = (
+				79CAC9D4375B733410343235 /* [CP] Check Pods Manifest.lock */,
+				C40200FE25E77EDC0079B25C /* Sources */,
+				C40200FF25E77EDC0079B25C /* Frameworks */,
+				C402010025E77EDC0079B25C /* Resources */,
+				D95F2DBE4257ECDF4FD82E1B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = crud_axosnet;
+			productName = crud_axosnet;
+			productReference = C402010225E77EDC0079B25C /* crud_axosnet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C402011F25E77EDD0079B25C /* crud_axosnetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C402013725E77EDD0079B25C /* Build configuration list for PBXNativeTarget "crud_axosnetTests" */;
+			buildPhases = (
+				C402011C25E77EDD0079B25C /* Sources */,
+				C402011D25E77EDD0079B25C /* Frameworks */,
+				C402011E25E77EDD0079B25C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C402012225E77EDD0079B25C /* PBXTargetDependency */,
+			);
+			name = crud_axosnetTests;
+			productName = crud_axosnetTests;
+			productReference = C402012025E77EDD0079B25C /* crud_axosnetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C402012A25E77EDD0079B25C /* crud_axosnetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C402013A25E77EDD0079B25C /* Build configuration list for PBXNativeTarget "crud_axosnetUITests" */;
+			buildPhases = (
+				C402012725E77EDD0079B25C /* Sources */,
+				C402012825E77EDD0079B25C /* Frameworks */,
+				C402012925E77EDD0079B25C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C402012D25E77EDD0079B25C /* PBXTargetDependency */,
+			);
+			name = crud_axosnetUITests;
+			productName = crud_axosnetUITests;
+			productReference = C402012B25E77EDD0079B25C /* crud_axosnetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C40200FA25E77EDC0079B25C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					C402010125E77EDC0079B25C = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					C402011F25E77EDD0079B25C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C402010125E77EDC0079B25C;
+					};
+					C402012A25E77EDD0079B25C = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C402010125E77EDC0079B25C;
+					};
+				};
+			};
+			buildConfigurationList = C40200FD25E77EDC0079B25C /* Build configuration list for PBXProject "crud_axosnet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C40200F925E77EDC0079B25C;
+			productRefGroup = C402010325E77EDC0079B25C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C402010125E77EDC0079B25C /* crud_axosnet */,
+				C402011F25E77EDD0079B25C /* crud_axosnetTests */,
+				C402012A25E77EDD0079B25C /* crud_axosnetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C402010025E77EDC0079B25C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C402011825E77EDD0079B25C /* LaunchScreen.storyboard in Resources */,
+				C402017325E78DC60079B25C /* Welcome.storyboard in Resources */,
+				C402011525E77EDD0079B25C /* Assets.xcassets in Resources */,
+				C40201A925E79D120079B25C /* CRUD.storyboard in Resources */,
+				C402011025E77EDC0079B25C /* Main.storyboard in Resources */,
+				C463CAFA25E8C4EF00E815E4 /* SourceSansPro-Bold.ttf in Resources */,
+				C463CAFB25E8C4EF00E815E4 /* SourceSansPro-SemiBold.ttf in Resources */,
+				C463CAFC25E8C4EF00E815E4 /* SourceSansPro-Light.ttf in Resources */,
+				C463CAFD25E8C4EF00E815E4 /* SourceSansPro-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C402011E25E77EDD0079B25C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C402012925E77EDD0079B25C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79CAC9D4375B733410343235 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-crud_axosnet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D95F2DBE4257ECDF4FD82E1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-crud_axosnet/Pods-crud_axosnet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-crud_axosnet/Pods-crud_axosnet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-crud_axosnet/Pods-crud_axosnet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C40200FE25E77EDC0079B25C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C402018525E791C20079B25C /* UITextFieldBorder.m in Sources */,
+				C402018625E791C20079B25C /* UIButtonRounded.m in Sources */,
+				C402018425E791C20079B25C /* UIViewRounded.m in Sources */,
+				C402011B25E77EDD0079B25C /* main.m in Sources */,
+				C40201A025E796FB0079B25C /* MainMenuViewController.m in Sources */,
+				C402015D25E7821F0079B25C /* TableViewCell.m in Sources */,
+				C402019125E7932E0079B25C /* UIColor+Colors.m in Sources */,
+				C40201B225E79EA90079B25C /* APKernel.m in Sources */,
+				C4C8164E25E8071400567CEA /* APWRequest.swift in Sources */,
+				C402011325E77EDC0079B25C /* crud_axosnet.xcdatamodeld in Sources */,
+				C402017625E78DC60079B25C /* WelcomePageViewController.m in Sources */,
+				C402010D25E77EDC0079B25C /* ListController.m in Sources */,
+				C402016625E789AB0079B25C /* FormViewController.m in Sources */,
+				C402010725E77EDC0079B25C /* AppDelegate.m in Sources */,
+				C47B793F25E87A3700C9A6F6 /* UIImageViewRounded.m in Sources */,
+				C402010A25E77EDC0079B25C /* SceneDelegate.m in Sources */,
+				C402017425E78DC60079B25C /* FinishWelcomeViewController.m in Sources */,
+				C402018325E791C20079B25C /* UITextViewBorder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C402011C25E77EDD0079B25C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C402012725E77EDD0079B25C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C402012225E77EDD0079B25C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C402010125E77EDC0079B25C /* crud_axosnet */;
+			targetProxy = C402012125E77EDD0079B25C /* PBXContainerItemProxy */;
+		};
+		C402012D25E77EDD0079B25C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C402010125E77EDC0079B25C /* crud_axosnet */;
+			targetProxy = C402012C25E77EDD0079B25C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C402010E25E77EDC0079B25C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C402010F25E77EDC0079B25C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C402011625E77EDD0079B25C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C402011725E77EDD0079B25C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C402013225E77EDD0079B25C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = crud_axosnet/Core/PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C402013325E77EDD0079B25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = crud_axosnet/Core/PrefixHeader.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C402013525E77EDD0079B25C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F9E6848AA7293565FD52F63 /* Pods-crud_axosnet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4Z296FR9A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = crud_axosnet/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alexis.crud-axosnet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "crud_axosnet/CoreControllers/crud_axosnet-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C402013625E77EDD0079B25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FACA4723E38907E8A5E6302 /* Pods-crud_axosnet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4Z296FR9A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = crud_axosnet/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alexis.crud-axosnet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "crud_axosnet/CoreControllers/crud_axosnet-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C402013825E77EDD0079B25C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4Z296FR9A;
+				INFOPLIST_FILE = crud_axosnetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alexis.crud-axosnetTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crud_axosnet.app/crud_axosnet";
+			};
+			name = Debug;
+		};
+		C402013925E77EDD0079B25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4Z296FR9A;
+				INFOPLIST_FILE = crud_axosnetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alexis.crud-axosnetTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crud_axosnet.app/crud_axosnet";
+			};
+			name = Release;
+		};
+		C402013B25E77EDD0079B25C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4Z296FR9A;
+				INFOPLIST_FILE = crud_axosnetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alexis.crud-axosnetUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = crud_axosnet;
+			};
+			name = Debug;
+		};
+		C402013C25E77EDD0079B25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4Z296FR9A;
+				INFOPLIST_FILE = crud_axosnetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alexis.crud-axosnetUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = crud_axosnet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C40200FD25E77EDC0079B25C /* Build configuration list for PBXProject "crud_axosnet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C402013225E77EDD0079B25C /* Debug */,
+				C402013325E77EDD0079B25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C402013425E77EDD0079B25C /* Build configuration list for PBXNativeTarget "crud_axosnet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C402013525E77EDD0079B25C /* Debug */,
+				C402013625E77EDD0079B25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C402013725E77EDD0079B25C /* Build configuration list for PBXNativeTarget "crud_axosnetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C402013825E77EDD0079B25C /* Debug */,
+				C402013925E77EDD0079B25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C402013A25E77EDD0079B25C /* Build configuration list for PBXNativeTarget "crud_axosnetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C402013B25E77EDD0079B25C /* Debug */,
+				C402013C25E77EDD0079B25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C402011125E77EDC0079B25C /* crud_axosnet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C402011225E77EDC0079B25C /* crud_axosnet.xcdatamodel */,
+			);
+			currentVersion = C402011225E77EDC0079B25C /* crud_axosnet.xcdatamodel */;
+			path = crud_axosnet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C40200FA25E77EDC0079B25C /* Project object */;
+}
